@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    /* background: url("../img/bg.jpg"); */
+    background: radial-gradient(rgb(255 0 0) , rgb(90 24 24));
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+    color: beige;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 65px;
+    right: 174px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+    color: beige;
+}
+
+
+#board{
+    background: url("../img/13127.jpg");
+    background-size: 90vmin 92vmin;
+    /* background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167)); */
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: .25vmin solid purple;
+    transform: scale(1.02);
+    border-radius: 8px;
+}
+
+.snake {
+    background: radial-gradient(rgb(114, 5, 114) , rgb(52, 6, 104));
+    /* background-color: purple; */
+    border: .25vmin solid white;
+    border-radius: 8px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid rgb(253, 253, 253);
+    border-radius: 8px;
+}
+
+
+#btnOff{
+    display: none;
+}
+
+
+.icon{
+    position: absolute;
+    bottom: 49px;
+    left: 70px;
+    padding: 5px;
+    color: white;
+    font-size: 59px;
+    cursor: pointer;
+}
+
+
+/* mobile features */
+
+.mobileIcon{
+    position: absolute;
+    bottom: 49px;
+    right: 70px;
+    padding: 5px;
+    color: white;
+    font-size: 59px;
+    cursor: pointer;
+}
+
+.mobilefunctionality{
+    display:none;
+}
+
+
+@media (max-width:65em){
+    .mobilefunctionality{
+        display: block;
+    }
+    #scoreBox{
+        font-size: 30px;
+        left: 38px;
+
+    }
+    #hiscoreBox{
+        font-size: 30px;
+        top: 9px;
+        right:83px;
+    }
+    .icon{
+        bottom: 15px;
+        left: 30px;
+    }
+    .up  , .down , .left , .right{
+        position: absolute;
+        padding: 5px;
+        color: white;
+        font-size: 59px;
+        cursor: pointer;
+    }
+    
+    .up:hover , .down:hover , .left:hover , .right:hover{
+        font-size: 70px;
+        color:gray;
+    }
+
+    .up{
+        bottom:81px;
+        right: 67px;
+    }
+    .down{
+        bottom:-2px;
+        right: 67px;
+    }
+    .left{
+        bottom:41px;
+        right: 120px;
+    }
+    .right{
+        bottom:41px;
+        right: 28px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Crazia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/edf3c43dc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body">
+        <div id= "scoreBox">Score: 0 </div>
+        <div id= "hiscoreBox">Hi Score: 0 </div>
+        <div id="board">
+            <div class="first"></div>
+        </div>
+        <div id="btnOn">
+            <span id="On" onclick="toggleSoundOn()"><i class="fas fa-volume-mute icon"></i></span>
+        </div>
+        <div id="btnOff">
+            <span id="Off" onclick="toggleSoundOff()"><i class="fas fa-volume-up icon"></i></span>
+        </div>
+        <!-- mobile features -->
+        <span  class="mobilefunctionality"  onclick="up()"><i class="fas fa-chevron-up up"></i></span>
+        <span  class="mobilefunctionality" onclick="left()"><i class="fas fa-chevron-left left"></i></span>
+        <span  class="mobilefunctionality" onclick="right()"><i class="fas fa-chevron-right right"></i></span>
+        <span class="mobilefunctionality"  onclick="down()"><i class="fas fa-chevron-down down"></i></span>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>
+
